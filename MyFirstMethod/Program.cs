@@ -15,12 +15,17 @@ namespace MyFirstMethod
             int nCount1 = Convert.ToInt32(aux1);
             CountToN(nCount1);
 
+            //2a vez
+            Console.WriteLine("\n");
             string aux2 = Console.ReadLine();
             int nCount2 = Convert.ToInt32(aux2);
             CountToN(nCount2);
 
+            //Contar até 10
+            Console.WriteLine("\n");
             CountTo10();
 
+            //Contar entre arg1 e arg2
             Console.WriteLine("\n");
             CountToN(3, 76);
         }
