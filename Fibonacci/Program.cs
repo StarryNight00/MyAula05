@@ -8,18 +8,27 @@ namespace Fibonacci
         {
             Console.WriteLine("Insira um número");
             string aux = Console.ReadLine();
-            int n = Convert.ToInt32(aux);
-            int p = n;
+            int inp = Convert.ToInt32(aux);
 
-            Fibonacci(p);
+            int pos = Fibonacci(inp);
 
-            Console.WriteLine(n + " está na posição " + p + " na sequência de Fibonacci.");
+            Console.WriteLine("A posição indicada tem contido o número " + pos + " na sequência de Fibonacci.");
         }
 
         static int Fibonacci(int n)
         {
-            n = 1;
-            return n;
+            int res; //resultado do pedido
+
+            if (n <= 2)
+            {
+                res = 1;
+            }
+            else
+            {
+                res = Fibonacci(n - 1) + Fibonacci(n - 2);
+            }
+
+            return res;
         }
     }
 }
