@@ -5,7 +5,7 @@ namespace MyFirstMethod
     class Program
     {
         /// <summary>
-        /// Main of the program, all of the 
+        /// Main of the program, all of the main components of the program are here.
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
