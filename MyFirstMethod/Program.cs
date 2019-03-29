@@ -4,6 +4,10 @@ namespace MyFirstMethod
 {
     class Program
     {
+        /// <summary>
+        /// Main of the program, all of the 
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             //1a vez
@@ -18,12 +22,21 @@ namespace MyFirstMethod
             CountTo10();
         }
 
+        /// <summary>
+        /// For cycle to print in console all numbers between 1 and n.
+        /// </summary>
+        /// <param name="n"> "n" is a variable type int.
+        /// Can be set previously or inserted inside the ( ) </param>
         static void CountToN(int n)
         {
             for (int i = 1; i <= n; i++)
                 Console.WriteLine(i);
         }
 
+        /// <summary>
+        /// For cycle to print in console all numbers between 1 and 10.
+        /// Uses the CountToN method with an int 10 within ( ). 
+        /// </summary>
         static void CountTo10()
         {
             CountToN(10);
