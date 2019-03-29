@@ -23,6 +23,7 @@ namespace MyFirstMethod
             for (int i = 1; i <= n; i++)
                 Console.WriteLine(i);
         }
+
         static void CountTo10()
         {
             CountToN(10);
